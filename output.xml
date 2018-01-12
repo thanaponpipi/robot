@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180112 11:40:07.615" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="P:\GitHub\robot\testEE.robot" id="s1" name="testEE">
+<test id="s1-t1" name="Check result of EE with S">
+<kw name="Login into REG system of MFU">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://reg.mfu.ac.th/registrar/login.asp</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20180112 11:40:10.428" level="INFO">Opening browser 'gc' to base url 'https://reg.mfu.ac.th/registrar/login.asp'</msg>
+<status status="PASS" endtime="20180112 11:40:24.573" starttime="20180112 11:40:10.427"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>f_uid</arg>
+<arg>5731305035</arg>
+</arguments>
+<msg timestamp="20180112 11:40:24.574" level="INFO">Typing text '5731305035' into text field 'f_uid'</msg>
+<status status="PASS" endtime="20180112 11:40:24.829" starttime="20180112 11:40:24.573"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>f_pwd</arg>
+<arg>042342113</arg>
+</arguments>
+<msg timestamp="20180112 11:40:24.830" level="INFO">Typing text '042342113' into text field 'f_pwd'</msg>
+<status status="PASS" endtime="20180112 11:40:25.014" starttime="20180112 11:40:24.830"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=/html/body/table/tbody/tr[1]/td[3]/form/div/table[2]/tbody/tr[3]/td[2]/font/input</arg>
+</arguments>
+<msg timestamp="20180112 11:40:25.015" level="INFO">Clicking element 'xpath=/html/body/table/tbody/tr[1]/td[3]/form/div/table[2]/tbody/tr[3]/td[2]/font/input'.</msg>
+<status status="PASS" endtime="20180112 11:40:25.818" starttime="20180112 11:40:25.014"></status>
+</kw>
+<status status="PASS" endtime="20180112 11:40:25.819" starttime="20180112 11:40:10.427"></status>
+</kw>
+<kw name="Go to EE system">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=/html/body/table/tbody/tr[1]/td[1]/table/tbody/tr[7]/td/a/img</arg>
+</arguments>
+<msg timestamp="20180112 11:40:25.823" level="INFO">Clicking element 'xpath=/html/body/table/tbody/tr[1]/td[1]/table/tbody/tr[7]/td/a/img'.</msg>
+<status status="PASS" endtime="20180112 11:40:37.805" starttime="20180112 11:40:25.822"></status>
+</kw>
+<status status="PASS" endtime="20180112 11:40:37.806" starttime="20180112 11:40:25.821"></status>
+</kw>
+<kw name="Check result">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>ผ่าน</arg>
+</arguments>
+<status status="PASS" endtime="20180112 11:40:37.844" starttime="20180112 11:40:37.808"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180112 11:40:41.037" starttime="20180112 11:40:37.844"></status>
+</kw>
+<status status="PASS" endtime="20180112 11:40:41.037" starttime="20180112 11:40:37.807"></status>
+</kw>
+<doc>Finding result</doc>
+<status status="PASS" endtime="20180112 11:40:41.039" critical="yes" starttime="20180112 11:40:10.425"></status>
+</test>
+<doc>This is robot to find resule of EE</doc>
+<status status="PASS" endtime="20180112 11:40:41.050" starttime="20180112 11:40:07.620"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="testEE" pass="1">testEE</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
