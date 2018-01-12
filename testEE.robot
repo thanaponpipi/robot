@@ -23,5 +23,5 @@ Go to EE system
 
 
 Check result
-  Wait Until Page Contains       ผ่านจ้าาาาาาาาาาาาา
+  Wait Until Page Contains       ผ่าน
   Close Browser
